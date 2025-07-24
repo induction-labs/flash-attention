@@ -1,0 +1,31 @@
+[project]
+name = "flash-attn-local"
+version = "0.1.0"
+description = "Bruh"
+readme = "README.md"
+authors = [{ name = "Jonathan Li", email = "li.jonathan42@gmail.com" }]
+requires-python = ">=3.12"
+# lmfao this is so stupid
+dependencies = [
+  "flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.1/flash_attn-2.8.1+cu12torch2.7cxx11abiFALSE-cp312-cp312-linux_x86_64.whl ; sys_platform == 'linux' and platform_machine == 'x86_64'",
+]
+
+
+[tool.uv.sources]
+
+[project.scripts]
+synth = "synth:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["flash_attn"]
+[tool.hatch.build.targets.wheel.sources]
+"flash_attn" = "flash_attn_local"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+[dependency-groups]
+# dev = ["gcsfs>=2025.3.0", "ipykernel>=6.29.5", "nltk>=3.9.1"]

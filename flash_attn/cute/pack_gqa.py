@@ -6,7 +6,7 @@ import operator
 import cutlass
 import cutlass.cute as cute
 
-import flash_attn.cute.utils as utils
+import flash_attn_local.cute.utils as utils
 
 
 class PackGQA:

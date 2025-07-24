@@ -19,17 +19,17 @@ from cutlass.cute.nvgpu import cpasync, warp, warpgroup
 import cutlass.utils.ampere_helpers as sm80_utils_basic
 import cutlass.utils.hopper_helpers as sm90_utils_basic
 
-from flash_attn.cute import ampere_helpers as sm80_utils
-from flash_attn.cute import hopper_helpers as sm90_utils
-from flash_attn.cute import utils
-from flash_attn.cute.mask import AttentionMask
-from flash_attn.cute.softmax import Softmax
-from flash_attn.cute.seqlen_info import SeqlenInfo
-from flash_attn.cute.block_info import BlockInfo
-from flash_attn.cute import pipeline
-from flash_attn.cute.pack_gqa import PackGQA
-from flash_attn.cute.named_barrier import NamedBarrierFwd
-from flash_attn.cute.tile_scheduler import TileSchedulerArguments, SingleTileScheduler, SingleTileLPTScheduler, SingleTileVarlenScheduler, ParamsBase
+from flash_attn_local.cute import ampere_helpers as sm80_utils
+from flash_attn_local.cute import hopper_helpers as sm90_utils
+from flash_attn_local.cute import utils
+from flash_attn_local.cute.mask import AttentionMask
+from flash_attn_local.cute.softmax import Softmax
+from flash_attn_local.cute.seqlen_info import SeqlenInfo
+from flash_attn_local.cute.block_info import BlockInfo
+from flash_attn_local.cute import pipeline
+from flash_attn_local.cute.pack_gqa import PackGQA
+from flash_attn_local.cute.named_barrier import NamedBarrierFwd
+from flash_attn_local.cute.tile_scheduler import TileSchedulerArguments, SingleTileScheduler, SingleTileLPTScheduler, SingleTileVarlenScheduler, ParamsBase
 
 
 class FlashAttentionForwardBase:
