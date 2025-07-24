@@ -2,7 +2,7 @@
 name = "flash-attn-local"
 version = "0.1.0"
 description = "Bruh"
-readme = "README.md"
+# readme = "README.md"
 authors = [{ name = "Jonathan Li", email = "li.jonathan42@gmail.com" }]
 requires-python = ">=3.12"
 # lmfao this is so stupid
