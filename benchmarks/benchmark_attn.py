@@ -23,8 +23,8 @@ from einops import rearrange, repeat
 # from flash_attn.utils.benchmark import benchmark_forward, benchmark_backward, benchmark_combined, benchmark_all, benchmark_fwd_bwd, pytorch_profiler
 from flash_attn.utils.benchmark import benchmark_forward, benchmark_backward, benchmark_combined, benchmark_all, benchmark_fwd_bwd, pytorch_profiler
 from flash_attn.flash_attn_interface import flash_attn_func, flash_attn_varlen_func
-from flash_attn.cute.interface import flash_attn_func as flash_attn_func_python
-from flash_attn.cute.interface import flash_attn_varlen_func as flash_attn_varlen_func_python
+from flash_attn_local.cute.interface import flash_attn_func as flash_attn_func_python
+from flash_attn_local.cute.interface import flash_attn_varlen_func as flash_attn_varlen_func_python
 try:
     from flash_attn_interface import flash_attn_func as flash_attn_func_v3
     from flash_attn_interface import flash_attn_varlen_func as flash_attn_varlen_func_v3

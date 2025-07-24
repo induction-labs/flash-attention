@@ -26,16 +26,16 @@ from cutlass.cute.nvgpu import cpasync
 import cutlass.cute.nvgpu.tcgen05 as tcgen05
 import cutlass.utils.blackwell_helpers as sm100_utils_basic
 
-import flash_attn.cute.utils as utils
-# import flash_attn.cute.pipeline as pipeline
-from flash_attn.cute.mask import AttentionMask
-from flash_attn.cute.softmax import SoftmaxSm100
-from flash_attn.cute.seqlen_info import SeqlenInfo
-from flash_attn.cute.block_info import BlockInfo
-from flash_attn.cute import mma_sm100_desc as sm100_desc
-from flash_attn.cute import blackwell_helpers as sm100_utils
-from flash_attn.cute.fast_math import FastDivmod
-from flash_attn.cute.tile_scheduler import TileSchedulerArguments, SingleTileScheduler, StaticPersistentTileScheduler, SingleTileLPTScheduler, SingleTileVarlenScheduler, ParamsBase
+import flash_attn_local.cute.utils as utils
+# import flash_attn_local.cute.pipeline as pipeline
+from flash_attn_local.cute.mask import AttentionMask
+from flash_attn_local.cute.softmax import SoftmaxSm100
+from flash_attn_local.cute.seqlen_info import SeqlenInfo
+from flash_attn_local.cute.block_info import BlockInfo
+from flash_attn_local.cute import mma_sm100_desc as sm100_desc
+from flash_attn_local.cute import blackwell_helpers as sm100_utils
+from flash_attn_local.cute.fast_math import FastDivmod
+from flash_attn_local.cute.tile_scheduler import TileSchedulerArguments, SingleTileScheduler, StaticPersistentTileScheduler, SingleTileLPTScheduler, SingleTileVarlenScheduler, ParamsBase
 
 
 # class NamedBarrierFwd(enum.IntEnum):

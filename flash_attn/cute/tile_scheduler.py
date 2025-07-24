@@ -7,8 +7,8 @@ import cutlass
 import cutlass.cute as cute
 from cutlass import Int32
 
-import flash_attn.cute.utils as utils
-from flash_attn.cute.fast_math import FastDivmod, clz
+import flash_attn_local.cute.utils as utils
+from flash_attn_local.cute.fast_math import FastDivmod, clz
 
 
 @dataclass

@@ -14,7 +14,7 @@ except ImportError:
 
 # from padding import pad_input, unpad_input
 from flash_attn.utils.testing import attention_ref, generate_qkv, generate_random_padding_mask
-from flash_attn.cute.interface import flash_attn_func, flash_attn_varlen_func
+from flash_attn_local.cute.interface import flash_attn_func, flash_attn_varlen_func
 
 
 # @pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16, torch.float8_e4m3fn])
